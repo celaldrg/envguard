@@ -1,0 +1,7 @@
+- id: envguard
+  name: envguard
+  description: Lint .env.example for syntax errors and committed secrets
+  entry: envguard --example-only
+  language: python
+  pass_filenames: false
+  files: (^|/)(\.env\.example|\.env\.sample|\.env\.template|\.env\.dist|example\.env)$

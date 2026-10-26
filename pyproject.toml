@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envguard-cli"
+version = "0.1.0"
+description = "Catch .env mistakes before they ship: missing keys vs .env.example, broken quotes, duplicates, and real secrets committed to example files."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Celalettin Durğaç" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["dotenv", "env", "lint", "secrets", "pre-commit", "devops", "ci"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/celaldrg/envguard"
+Issues = "https://github.com/celaldrg/envguard/issues"
+
+[project.scripts]
+envguard = "envguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
