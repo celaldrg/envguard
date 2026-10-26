@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/celaldrg/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/celaldrg/envguard/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/celaldrg/envguard?sort=semver)](https://github.com/celaldrg/envguard/releases)
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)
 ![Zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 
