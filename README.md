@@ -1,16 +1,30 @@
-# envguard
+<p align="center">
+  <img src="assets/banner.webp" alt="envguard" width="100%">
+</p>
 
 **Catch `.env` mistakes before they ship.** envguard compares your `.env` with `.env.example` and finds missing keys, broken quotes, duplicates, values that different loaders read differently, and real credentials accidentally committed to the example file.
 
-[![CI](https://github.com/celaldrg/envguard/actions/workflows/ci.yml/badge.svg)](https://github.com/celaldrg/envguard/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/celaldrg/envguard?sort=semver)](https://github.com/celaldrg/envguard/releases)
-![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)
-![Zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
+<p align="center">
+  <a href="https://github.com/celaldrg/envguard/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/celaldrg/envguard/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://github.com/celaldrg/envguard/releases"><img alt="Release" src="https://img.shields.io/github/v/release/celaldrg/envguard?sort=semver"></a>
+  <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-3776AB">
+  <img alt="Zero dependencies" src="https://img.shields.io/badge/dependencies-0-brightgreen">
+</p>
 
 Pure Python standard library, no dependencies. Works locally, in pre-commit and in CI (with GitHub annotations).
 
+<p align="center">
+  <img src="assets/terminal-demo.webp" alt="envguard, real terminal output" width="860">
+  <br><sub>Real output: <code>envguard</code> on the repo's <code>examples/.env.example</code> and the <code>.env</code> shown below.</sub>
+</p>
+
 ## Example
+
+<p align="center">
+  <img src="assets/demo.gif" alt="envguard running in a terminal" width="860">
+  <br><sub>Recorded with <a href="https://github.com/charmbracelet/vhs">vhs</a>.</sub>
+</p>
 
 Given this `.env.example`:
 
